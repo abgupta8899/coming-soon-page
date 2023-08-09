@@ -1,0 +1,54 @@
+
+        /* 2. Body must be a flexbox */
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            /* Adding a background image to cover the whole page */
+            background-image: url('bk.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        h1{
+            color: yellow;
+        }
+        h2{
+            color: black;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column; /* To stack h1 and h2 tags vertically */
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #1b0101;
+            padding: 16px;
+            width: 300px;
+            height: 200px;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white to make text more readable */
+        }
+
+        .card img {
+            height: 100%; /* 1. Image height equal to the card height */
+        }
+
+        input[type="text"] {
+            margin-top: 20px;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            /* 3. Input of type text must have placeholder: Email Address */
+        }
+
+    
